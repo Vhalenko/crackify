@@ -1,0 +1,99 @@
+﻿.bom-guard { }
+
+.label { -fx-text-fill: #d7dde4; }
+.muted { -fx-text-fill: #6b7685; }
+.prompt { -fx-text-fill: #5eead4; -fx-font-size: 16px; }
+
+#title  { -fx-font-size: 26px; -fx-text-fill: #f1f5f9; }
+#artist { -fx-font-size: 15px; -fx-text-fill: #9aa5b1; }
+
+/* ---------- панели ---------- */
+.panel {
+    -fx-background-color: #0f1318;
+    -fx-border-color: #222831;
+    -fx-border-width: 1;
+}
+.pad { -fx-padding: 12 14; }
+.panel-title { -fx-text-fill: #5eead4; -fx-font-size: 12px; }
+
+.top-bar {
+    -fx-padding: 10 20;
+    -fx-border-color: transparent transparent #222831 transparent;
+}
+.bottom-bar {
+    -fx-padding: 14 20;
+    -fx-border-color: #222831 transparent transparent transparent;
+}
+
+/* ---------- поиск ---------- */
+#search {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-text-fill: #d7dde4;
+    -fx-prompt-text-fill: #4b5563;
+    -fx-highlight-fill: #5eead4;
+    -fx-highlight-text-fill: #0b0d10;
+    -fx-font-size: 15px;
+    -fx-padding: 8 0;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ---------- кнопки ---------- */
+.button {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-border-color: #222831;
+    -fx-border-width: 1;
+    -fx-text-fill: #9aa5b1;
+    -fx-padding: 6 14;
+    -fx-cursor: hand;
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+.button:hover   { -fx-border-color: #5eead4; -fx-text-fill: #d7dde4; }
+.button:pressed { -fx-background-color: #151b22; }
+#play { -fx-text-fill: #5eead4; -fx-border-color: #5eead4; }
+
+/* ---------- ползунки ---------- */
+.slider .track {
+    -fx-background-color: #222831;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-pref-height: 4;
+}
+.slider .thumb {
+    -fx-background-color: #d7dde4;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 8 4 8 4;
+}
+.slider:focused { -fx-background-color: transparent; }
+.slider:focused .thumb { -fx-background-color: #5eead4; }
+
+/* ---------- очередь ---------- */
+.list-view {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.list-view:focused { -fx-background-color: transparent; }
+.list-view .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #9aa5b1;
+    -fx-padding: 5 8;
+}
+.list-view .list-cell:hover    { -fx-background-color: #151b22; }
+.list-view .list-cell:selected { -fx-background-color: #1a222b; -fx-text-fill: #d7dde4; }
+.list-view .list-cell:focused  { -fx-text-fill: #5eead4; }
+
+/* ---------- скроллбар ---------- */
+.scroll-bar { -fx-background-color: transparent; }
+.scroll-bar:vertical { -fx-pref-width: 8; }
+.scroll-bar .track { -fx-background-color: transparent; -fx-border-color: transparent; }
+.scroll-bar .thumb { -fx-background-color: #2a313b; -fx-background-radius: 0; }
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-padding: 0; -fx-background-color: transparent;
+}
+.scroll-bar .increment-arrow, .scroll-bar .decrement-arrow { -fx-padding: 0; -fx-shape: ""; }
